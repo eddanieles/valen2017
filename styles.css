@@ -1,0 +1,52 @@
+body {
+  position: relative;
+  background-color: #64152C;
+  width: 100%;
+  height: 100%;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0.5em 1em;
+  color: #A00E22;
+}
+
+h1 {
+  font-family: 'Tangerine', serif;
+  font-size: 48px;
+  text-align: center;
+  color: white;
+  font-size: 500%;
+  /*position: absolute;*/
+  margin-top: 20%;
+  /*height: 100px;*/
+  /*margin-top: -50px;*/
+}
+
+.hearts {
+  width: 15px;
+  height: 15px;
+  position: absolute;
+  border-radius: 50%;
+}
+.hearts:before {
+  content: ' ';
+  position: absolute;
+  height: 15px;
+  width: 15px;
+  border-radius: 50%;
+  left: 15px;
+  display: block;
+  background: inherit;
+}
+.hearts:after {
+  content: ' ';
+  display: block;
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  background: inherit;
+  transform: rotate(45deg);
+  top: 2.25px;
+  left: 5px;
+  -webkit-clip-path: polygon(38% 38%, 100% 0, 100% 100%, 0 100%);
+  clip-path: polygon(38% 38%, 100% 0, 100% 100%, 0 100%);
+}
